@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap');
+body {
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:  #b26c4a;
+    color: #ebe8d5;
+}
+h1 {
+    font-size: 2.5em;
+}
+#board {
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px 5px #482d20;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 118px;
+    height: 118px;
+    border: 1px solid #b08f88;
+}
+
+#rules {
+    color: rgba(0,0,0,.6);
+    text-shadow: 3px 2px 3px rgba(255,255,255,0.3);
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #b08f88;
+    background-color: #e0d3cb;
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.5em;
+}
+.model {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#cheat {
+    border: none;
+    background-color: #d61917;
+    color: #e0d3cb;
+    font-weight: bold;
+    padding: 0.5em 1.2em;
+    border-radius: 5px;
+    margin-top: 3.5em;
+    position: relative;
+}
+#cheat::before, #cheat::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    border-bottom : 30px solid transparent;
+}
+ #cheat::before {
+    border-right : 15px solid transparent;
+    border-left : 15px solid #d61917;
+    left:0;
+    border-top-left-radius: 40px 40px;
+ }
+
+ #cheat::after {
+    border-right : 15px solid #d61917;
+    border-left : 15px solid transparent;
+    right:0;
+    border-top-right-radius: 40px 40px;
+ }
