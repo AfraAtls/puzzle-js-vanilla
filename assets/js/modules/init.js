@@ -24,7 +24,7 @@ export const init = {
                 <li>Il y a une case vide dans le jeu, c'est celle qui ne contient aucun dessin.</li>
                 <li>Vous pouvez uniquement déplacer les cartes sur la case vide.</li>
                 <li>Les déplacements doivent être effectués de manière adjacente</li>
-                <li>Une l'image formée, le jeu est terminé !</li>
+                <li>Une fois l'image formée, le jeu est terminé !</li>
             </ul>
           `;
           modal.appendChild(modalContent);
